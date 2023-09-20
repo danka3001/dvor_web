@@ -16,7 +16,7 @@
 
         <div class="topnav">
             <a class="active" href=index.html>Home</a>
-            <a href="#news">News</a>
+            <a href=news.html>News</a>
             <a href=contact.html>Contact</a>
             <a href="#about">About</a>
           </div>
@@ -33,15 +33,21 @@
           <div class="contact-container">
             <div class="contact-form">
               <h2>Свяжитесь с нами</h2>
-              <form>
+              <form action="connect.php" method="post">
+                <div class="contact-form">
                 <label for="name">Имя Фамилия</label>
                 <input type="text" id="name" name="name" required>
-        
+              </div>
+
+                <div class="contact-form">
                 <label for="phone">Номер телефона:</label>
                 <input type="tel" id="phone" name="phone" required>
+              </div>
+              <div  class="contact-form" >
         
                 <label for="message">Проблема:</label>
                 <textarea id="message" name="message" rows="4" required></textarea>
+              </div>
         
                 <button type="submit">Отправить</button>
               </form>
@@ -51,6 +57,7 @@
               <img src="sqim.png" alt="Contact Image">
             </div>
           </div>
+        
           
           
           <div class="ph">
